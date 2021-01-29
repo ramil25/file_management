@@ -5,11 +5,11 @@ $localIP = '10.0.0.58';
 <html>
 <head>
 	<title>File Management</title>
-	<link rel="stylesheet" type="text/css" href="http://<?php echo $localIP ?>/psbc_file_management/dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="https://psbc-file-management.herokuapp.com/dist/css/bootstrap.css" />
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-  <a class="navbar-brand" href="#"><img src="http://<?php echo $localIP ?>/psbc_file_management/img/psbc.png" width="70" height="70" class="float-left mr-4" /><h2 class="p-3">PSBC Document Management System</h2></a>
+  <a class="navbar-brand" href="#"><img src="https://psbc-file-management.herokuapp.com/img/psbc.png" width="70" height="70" class="float-left mr-4" /><h2 class="p-3">PSBC Document Management System</h2></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -78,7 +78,7 @@ $localIP = '10.0.0.58';
 			<div class="row">
 <?php
 echo "<div class='col-12'>";
-echo "<h2><a href='http://".$localIP."/psbc_file_management/'><img src='http://".$localIP."/psbc_file_management/img/home.png' width='100' height='100' /></a></h2>";
+echo "<h2><a href='http://".$localIP."/psbc_file_management/'><img src='https://psbc-file-management.herokuapp.com/img/home.png' width='100' height='100' /></a></h2>";
 echo "<h3>Current Folder:".basename(__DIR__)."</h3></div>";
 $dir = "./";
 
@@ -104,25 +104,25 @@ foreach ($folder as $filename) {
 			<div class="col-sm-6 col-md-3 col-lg-3 ">
 				<?php
 				if(substr($filename, -5)==".xlsx"){
-						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="http://'.$localIP.'/psbc_file_management/img/excel.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
+						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/excel.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 				}
 				else if(substr($filename, -5)==".docx"){
-						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="http://'.$localIP.'/psbc_file_management/img/word.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
+						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 				}
 				else if(substr($filename, -4)==".pub"){
-						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="http://'.$localIP.'/psbc_file_management/img/pub.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
+						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/pub.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 				}
 				else if(substr($filename, -4)==".pdf"){
-						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="http://'.$localIP.'/psbc_file_management/img/pdf.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
+						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/img/pdf.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 				}
 				else if(substr($filename, -5)==".pptx"){
-						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="http://'.$localIP.'/psbc_file_management/img/powerpoint.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
+						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/img/powerpoint.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 				}
 				else if(substr($filename, -4)==".png" || substr($filename, -4)==".jpg" || substr($filename, -4)==".gif"){
 						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="'.$filename.'" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 				}
 				else{
-				echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="http://'.$localIP.'/psbc_file_management/img/folder-icon.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
+				echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/img/folder-icon.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 					}
 				?>
 				</div>
