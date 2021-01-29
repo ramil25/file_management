@@ -107,7 +107,7 @@ foreach ($folder as $filename) {
 						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/excel.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 				}
 				else if(substr($filename, -5)==".docx"){
-						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
+						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/word.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
 				}
 				else if(substr($filename, -4)==".pub"){
 						echo '<div class="m-3 text-center p-3"><a href="'.$filename.'"><img src="https://psbc-file-management.herokuapp.com/pub.png" width="100" height="100" /> <br /><h4 class="text-dark">'.substr($filename,0,20).'</h4></a></div>';
