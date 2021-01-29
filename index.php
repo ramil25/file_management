@@ -78,7 +78,7 @@ $localIP = '10.0.0.58';
 			<div class="row">
 <?php
 echo "<div class='col-12'>";
-echo "<h2><a href='http://".$localIP."/psbc_file_management/'><img src='https://psbc-file-management.herokuapp.com/img/home.png' width='100' height='100' /></a></h2>";
+echo "<h2><a href='https://psbc-file-management.herokuapp.com/'><img src='https://psbc-file-management.herokuapp.com/img/home.png' width='100' height='100' /></a></h2>";
 echo "<h3>Current Folder:".basename(__DIR__)."</h3></div>";
 $dir = "./";
 
