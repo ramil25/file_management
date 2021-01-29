@@ -5,7 +5,7 @@ $localIP = '10.0.0.58';
 <html>
 <head>
 	<title>File Management</title>
-	<link rel="icon" href="psbc.png" >
+	<link rel="icon" href="img/psbc.png" >
 	<link rel="stylesheet" type="text/css" href="https://psbc-file-management.herokuapp.com/dist/css/bootstrap.css" />
 </head>
 <body>
